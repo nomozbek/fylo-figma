@@ -1,0 +1,161 @@
+/* FONTS */
+
+
+/* livvic-700italic - latin */
+@font-face {
+  font-family: 'Livvic';
+  font-style: italic;
+  font-weight: 700;
+  src: local(''),
+       url('../fonts/livvic-v11-latin-700italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/livvic-v11-latin-700italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+
+/* GENERAL STYLES */
+body{
+  background-color: #004047
+}
+
+.container{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 40px;
+}
+
+.meet-directions-heading{
+  text-align: center;
+  font-size: 48px;
+  line-height: 48px;
+  color: #FFFFFF;
+  margin-top: 70px;
+  font-family: Livvic;
+
+}
+.meet-directions-list{
+  margin-top: 20px;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.kotta-div{
+  display: flex;
+  position: relative;
+}
+
+
+
+.main-item{
+  position: absolute;
+  width: 350px;
+  height: 253px;
+  background-color: #012F34;
+  text-align: center;
+}
+
+.main-item h3{
+  font-family: Livvic;
+  font-size: 18px;
+  line-height: 28px;
+  color: #79C8C7;
+}
+
+
+.main-item p{
+  font-family: Livvic;
+  font-size: 15px;
+  line-height: 25px;
+  color: #FFFFFF;
+}
+
+.main-item img{
+  margin-top: 25px;
+}
+
+
+
+
+.about-item{
+  width: 350px;
+  height: 253px;
+  background-color: #002529;
+  overflow: hidden;
+  text-align: center;
+
+}
+
+.about-item h3{
+  font-family: Livvic;
+  font-size: 18px;
+  line-height: 28px;
+  color: #79C8C7;
+  margin-top: 20px;
+}
+
+.about-item p{
+  font-family: Livvic;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+  color: #FFFFFF;
+}
+
+
+.about-item img{
+  margin-top: 30px;
+}
+
+
+.kotta-div:hover .about-item{
+  width: 350px;
+  height: 253px;
+  z-index: 1;
+}
+
+.main-item .main-item-span{
+  position:absolute;
+  left: 140px;
+  bottom:-32.9px;
+  width: 60px;
+  height: 60px;
+  background-color: #F67E7E;
+  border-radius: 50px;
+  transition: 0.5s;
+}
+
+
+.main-item .span-p{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  left: 20px;
+  bottom: 20px;
+  width: 16px;
+  height: 16px;
+  font-weight: bolder;
+  color: #002529;
+}
+
+
+.kotta-div:hover .main-item-span{
+  background-color:#79C8C7;
+  transform: rotateZ(45deg);
+  z-index: 3;
+}
+
+.kotta-div:hover .span-p{
+  color:#002529;
+}
+
+
+
+.meet-directions-second-list{
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 75px;
+}
