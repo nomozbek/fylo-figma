@@ -43,6 +43,7 @@ body{
 
 .kotta-div{
   display: flex;
+  justify-content: space-evenly;
   position: relative;
 }
 
